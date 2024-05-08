@@ -1,0 +1,44 @@
+{
+	"name": "analytics-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest --coverage",
+		"dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+		"tsc": "tsc",
+		"start": "node build/index.js",
+		"lint": "biome check --apply ."
+	},
+	"keywords": [],
+	"author": "Dheeraj Agrawal <agrawal.dheeraj.7@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"@google-cloud/vision": "^4.2.1",
+		"axios": "^1.6.8",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"helmet": "^7.1.0",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.7.2",
+		"@types/axios": "^0.14.0",
+		"@types/cors": "^2.8.17",
+		"@types/dotenv": "^8.2.0",
+		"@types/express": "^4.17.21",
+		"@types/helmet": "^4.0.0",
+		"@types/jest": "^29.5.12",
+		"@types/morgan": "^1.9.9",
+		"@types/node": "^20.12.8",
+		"@types/supertest": "^6.0.2",
+		"eslint": "^9.2.0",
+		"eslint-config-biome": "^1.5.3",
+		"jest": "^29.7.0",
+		"supertest": "^7.0.0",
+		"ts-jest": "^29.1.2",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.4.5"
+	}
+}
