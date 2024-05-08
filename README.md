@@ -2,36 +2,49 @@
 
 NodeJS Express server side REST API application. The service exposes following two API
 
-## GET /api/city
+## GET /api/stake
 
-The city index API (`GET /api/city`) is responsible for getting price information for all city indexes.
+The staking validators API (`GET /api/stake`) is responsible for getting price staking node/validator information for all tokens. This API will rely on Staking Rewards API to get the details.
 
 ### response payload
 
 ```json
-[
-    {
-        "name": "Paris",
-        "price": 100
-    },
-    {
-        "name": "New York",
-        "price": 110
-    }
-]
+ [
+ {
+  "token": "MATIC",
+  "validators": [{
+   "address": "0x01",
+   "commission": 5,
+   "apy": 10
+  }]
+ },
+ {
+  "token": "AVAX",
+  "validators": [{
+   "address": "0x01",
+   "commission": 5,
+   "apy": 10
+  }]
+ }
+];
+
 ```
 
-## GET /api/city/{cityCode}
+## GET /api/stake/{token}
 
-The City Index API (`GET /api/city/{cityCode}`) is responsible get the city index price information for a specific city identified by `cityCode`.
+The stake validator API (`GET /api/stake/{token}`) is responsible get the staking node/validator information for a specific token identified by `token`.
 
 ### response payload
 
 ```json
 {
-    "name": "Paris",
-    "price": 100
-}
+  "token": "AVAX",
+  "validators": [{
+   "address": "0x01",
+   "commission": 5,
+   "apy": 10
+  }]
+ }
 ```
 
 ## technology
