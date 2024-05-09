@@ -8,9 +8,9 @@ describe("Staking", () => {
 			const res = await request(app).get("/api/stake");
 			expect(res.status).toBe(200);
 		});
-    });
-    
-    describe("GET /stake/MATIC", () => {
+	});
+
+	describe("GET /stake/MATIC", () => {
 		test("Should return stakers for MATIC", async () => {
 			const res = await request(app).get("/api/stake/MATIC");
 			expect(res.status).toBe(200);

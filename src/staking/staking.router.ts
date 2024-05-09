@@ -1,6 +1,6 @@
 import express, { type Request, type Response } from "express";
+import type { Staker } from "./staking.interface";
 import * as StakingSvc from "./staking.service";
-import { Staker } from './staking.interface';
 
 export const stakingRouter = express.Router();
 

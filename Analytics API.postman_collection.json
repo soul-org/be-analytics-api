@@ -13,13 +13,8 @@
 				"header": [],
 				"url": {
 					"raw": "{{baseUrl}}/api/city",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"city"
-					]
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "city"]
 				}
 			},
 			"response": []
@@ -31,14 +26,8 @@
 				"header": [],
 				"url": {
 					"raw": "{{baseUrl}}/api/city/Paris",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"city",
-						"Paris"
-					]
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "city", "Paris"]
 				}
 			},
 			"response": []
@@ -50,9 +39,7 @@
 			"script": {
 				"type": "text/javascript",
 				"packages": {},
-				"exec": [
-					""
-				]
+				"exec": [""]
 			}
 		},
 		{
@@ -60,9 +47,7 @@
 			"script": {
 				"type": "text/javascript",
 				"packages": {},
-				"exec": [
-					""
-				]
+				"exec": [""]
 			}
 		}
 	],
